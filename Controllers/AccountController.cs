@@ -39,9 +39,14 @@ namespace AMS.Controllers
             else
             {
                 sql.Close();
-                return View("~/Views/Register/RegisterController.cshtml");
+                return RedirectToAction("Register");
             } 
            
         }
+        public ActionResult Register()
+        {
+            return View();
+        }
+
     }
 }
